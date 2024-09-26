@@ -12,7 +12,9 @@ html{
 }
  
 body{
-    background: url(field.jpg);
+    /* background: url(field.jpg);
+    BACKGROUND-REPEAT: no-repeat;
+    background-size: 100% auto; */
 }
 :root{
     --main:#036e3a;
@@ -31,7 +33,7 @@ body{
     height: 85px;
     background-color: transparent;
     justify-content: space-evenly;
-    z-index: 99;
+    z-index: 1;
     background-color: rgb(4, 85, 28);
     position: fixed;
    
@@ -89,6 +91,7 @@ body{
     width: 320px;
     height: 400px;
     margin: 10px;
+    z-index: 1;
     border-radius: 5px 5px 0px 0px;
    background-color: white;
    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
@@ -129,7 +132,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+    background-color: #666;
    
 }
 .price .star1{
@@ -235,6 +238,18 @@ body{
     justify-content: space-between;
     align-items: center;
     color: white;
+    position: sticky;
+    width: 100%;
+    height: 80px;
+    padding: 1px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 

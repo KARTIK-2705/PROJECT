@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+/* General body styling */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light background for contrast */
+}
+
+.h1, h1 {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 85px;
+    background-color: transparent;
+    justify-content: space-evenly;
+    z-index: 1;
+    background-color: rgb(4, 85, 28);
+    position:static;
+  }
+  
+  .navbar a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 16px;
+    color: white;
+    margin-right: 30px;
+    text-decoration: none;
+  }
+  .navbar a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+  }
+  .navbar a:hover:after{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .navbar-brand {
+    color: #ffffff; /* White text for the logo */
+  }
+  
+  .nav-link {
+    color: #ffffff; /* White text for nav links */
+    margin-right: 15px; /* Space between nav links */
+  }
+  
+  .nav-link:hover {
+    color: #ffc107; /* Yellow color on hover */
+  }
+
+
+/* Card container styling */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  justify-content: center; /* Center the cards in the container */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the card container */
+}
+
+/* Card styling */
+.card {
+  transition: transform 0.2s; /* Smooth transform effect on hover */
+  border: none; /* Remove card border */
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  width: 22rem; /* Fixed width for cards */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Card image styling */
+.card-img-top {
+  height: 200px; /* Fixed height for card images */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border: none; /* No border */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .card-container {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center cards */
+  }
+  
+  .card {
+      width: 100%; /* Make cards take full width */
+      margin: 10px 0; /* Space between stacked cards */
+      max-width: 400px; /* Optional: set a max-width for better appearance */
+  }
+}
+/* Footer Styling */
+footer {
+  background-color: rgb(4, 85, 28); /* Dark background for footer */
+  color: white; /* White text for footer */
+  padding: 20px 0; /* Padding for footer */
+}

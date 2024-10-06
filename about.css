@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  /* General body styling */
+  .body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #000000;
+  }
+  
+  .h1, h1 {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 85px;
+    background-color: transparent;
+    justify-content: space-evenly;
+    z-index: 1;
+    background-color: rgb(4, 85, 28);
+    position:static;
+  }
+  
+  .navbar a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 16px;
+    color: white;
+    margin-right: 30px;
+    text-decoration: none;
+  }
+  .navbar a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+  }
+  .navbar a:hover:after{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .navbar-brand {
+    color: #ffffff; /* White text for the logo */
+  }
+  
+  .nav-link {
+    color: #ffffff; /* White text for nav links */
+    margin-right: 15px; /* Space between nav links */
+  }
+  
+  .nav-link:hover {
+    color: #ffc107; /* Yellow color on hover */
+  }
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background for the body */
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('abt.jpg'); /* Background image for hero section */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 50px 20px; /* Padding */
+    text-align: center; /* Centered text */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Larger font for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Slightly larger font for the paragraph */
+}
+
+/* Section styling */
+.section {
+    padding: 40px 20px; /* Padding around sections */
+}
+
+.section h2 {
+    margin-bottom: 20px; /* Space below section headings */
+    font-size: 2rem; /* Larger font for section headings */
+}
+
+.section p {
+    font-size: 1rem; /* Standard font size for paragraphs */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+.section ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove padding */
+}
+
+.section ul li {
+    background: url('check-icon.png') no-repeat left center; /* Custom bullet icon */
+    padding-left: 25px; /* Space for the bullet */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Footer styling */
+footer {
+    background-color: rgb(4, 85, 28); /* Dark background for footer */
+    color: white; /* White text for footer */
+    padding: 20px 0; /* Padding for footer */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px 10px; /* Reduce padding for mobile */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .section h2 {
+        font-size: 1.5rem; /* Adjust section heading size */
+    }
+
+    .section p, .section ul li {
+        font-size: 0.9rem; /* Adjust paragraph and list item size */
+    }
+}

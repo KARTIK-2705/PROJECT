@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Checkout Form</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="payment.css">
+
+</head>
+<body>
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <p>p</p>
+    </div>
+    
+    
+    <h2>Payment Gateway</h2>
+    <div class="form">
+      <div class="card space icon-relative">
+        <label class="label">Card holder:</label>
+        <input type="text" class="input" placeholder="Coding Market">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Card number:</label>
+        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date:</label>
+          <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00">
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVC:</label>
+          <input type="text" class="input" data-mask="000" placeholder="000">
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+        
+     
+        <a class="btn btn-primary">Pay</a>
+  
+      
+    </div>
+  </div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Handle form submission
+        $('.btn-primary').click(function(e) {
+            e.preventDefault(); // Prevent default form submission
+            
+            // Get form values
+            const cardHolder = $('.input[placeholder="Coding Market"]').val().trim();
+            const cardNumber = $('.input[placeholder="Card Number"]').val().trim();
+            const expiryDate = $('.input[placeholder="00 / 00"]').val().trim();
+            const cvc = $('.input[placeholder="000"]').val().trim();
+
+            // Validate fields
+            let valid = true;
+
+            if (cardHolder === "KARTIK") {
+                valid = true;
+            }else{
+                valid = false;
+                alert("invalid cardholder");
+            }
+            if (cardNumber === "8973 7470 3783 4837" || !/^\d{4} \d{4} \d{4} \d{4}$/.test(cardNumber)) {
+                valid = true;
+            }else{
+                valid = false;
+                alert("invalid cardNumber");
+            }
+            if (expiryDate === "30 / 45" || !/^\d{2} \/ \d{2}$/.test(expiryDate)) {
+                valid = true;
+            }else{
+                valid = false
+                alert("invalid expirydate");
+            }
+            if (cvc === "794" || !/^\d{3}$/.test(cvc)) {
+                valid = true;
+            }else{
+                valid = false
+                alert("invalid cvc");
+            }
+
+            // If all fields are valid, simulate form submission
+            if (true) {
+                alert("Payment successful!");
+                window.location.href = "crops.html";
+            }else{ 
+               alert("Payment unsuccessfull");
+               window.location.href = "payment.html";
+            }       
+        });
+    });
+</script>
+</body>
+</html>

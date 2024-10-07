@@ -1,226 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="machinery.css">
-    <title>Purchase Machine</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="crops.css">
+    <title>Sheti Vidynan</title>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between cards */
+        }
+        .card {
+            width: 22rem; /* Set width for each card */
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <h1 class="logo"><i class='bx bxl-xing'></i>Sheti Vidnyan</h1>
+          </div>
+          <a href="home.html">Home</a>
+        <a href="crops.html">Crops</a>
+        <a href="Machinery.html">Machinery</a>
+        <a href="#">Cultivation & Protection</a>
+          <a href="aboutus.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Help</a>
+          </nav>
+        </nav>
+    </header>
+    <body>
 
-    <section class="header">
-        <div class="nav-bar">
-            <div class="left-side">
-                <div class="logo">
-                    <h2 class="logo"><i class='bx bxl-xing'></i>Sheti Vidnyan</h2>
-                </div>
-            </div>
-
-    </section>
-
-
-    <div>
-
-        <div class="Purchase">
-            <h1>Want to Purchase a Machine?</h1>
-        </div>
-    </div>
-
-    <!--Products-->
-    <section class="Purchase">
-
-        <!--Garden Tractor-->
-        <div class="boxes">
-            <div class="boxes">
-                <div class="hero_img">
-                    <img src="mahindra.webp">
-                    <div class="machine-name">
-                        <p>Garden Tractor</p>
-                    </div>
-                    <div class="price">
-                        <p>₹1,50,000</p>
-                        <div class="star1">☆</div>
-                        <div class="star1">☆</div>
-                        <div class="star1">☆</div>
-                        <div class="star1">☆</div>
-                        <div class="star1">☆</div>
-                    </div>
-                    <div class="Purchase">
-                        <button>Purchase</button>
+        <div class="container my-4">
+            <div class="card-container">
+                <div class="card">
+                    <img src="mahindra.webp" class="card-img-top" alt="tractor">
+                    <div class="card-body">
+                        <h5 class="card-title">MAHINDRA TRACTOR</h5>
+                        <p class="card-text">Price:₹1,50,000</p>
+                        <div class="star1">☆☆☆☆☆</div>
+                        <a href="#" class="btn btn-primary">BUY NOW</a>
                     </div>
                 </div>
-            </div>
-
-
-            
-
-
-            <!--excavator-->
-            <div class="boxes">
-                <div class="hero_img">
-                    <img src="equipment.jpg">
+                <!-- Product Card: Excavator -->
+                <div class="card">
+                    <img src="equipment.jpg" class="card-img-top" alt="Excavator">
+                    <div class="card-body">
+                        <h5 class="card-title">Pneumatic Seeder</h5>
+                        <p class="card-text">Price:₹90,000</p>
+                        <div class="star2">☆☆☆☆☆</div>
+                        <a href="#" class="btn btn-primary">BUY NOW</a>
+                    </div>
                 </div>
-                <div class="machine-name">
-                    <p>Excavator</p>
+                <!-- Product Card: Walking Tractor -->
+                <div class="card">
+                    <img src="walking tractor.webp" class="card-img-top" alt="walkingtractor">
+                    <div class="card-body">
+                        <h5 class="card-title">Walking Tractor</h5>
+                        <p class="card-text">Price:₹40,000</p>
+                        <div class="star3">☆☆☆☆☆</div>
+                        <a href="#" class="btn btn-primary">BUY NOW</a>
+                    </div>
                 </div>
-                <div class="price">
-                    <p>₹ 12,499</p>
-                    <div class="star2">☆</div>
-                    <div class="star2">☆</div>
-                    <div class="star2">☆</div>
-                    <div class="star2">☆</div>
-                    <div class="star2">☆</div>
+                <!-- Product Card: Cultivator -->
+                <div class="card">
+                    <img src="cultivator.jpeg" class="card-img-top" alt="cultivator">
+                    <div class="card-body">
+                        <h5 class="card-title">Cultivator</h5>
+                        <p class="card-text">Price:₹20,000</p>
+                        <div class="star4">☆☆☆☆☆</div>
+                        <a href="#" class="btn btn-primary">BUY NOW</a>
+                    </div>
                 </div>
-                <div class="Purchase">
-                    <button>Purchase</button>
+                <!-- Product Card: Manual Fertilizer -->
+                <div class="card">
+                    <img src="manual fertilizer.webp" class="card-img-top" alt="manual fertilizer">
+                    <div class="card-body">
+                        <h5 class="card-title">Manual Fertilizer</h5>
+                        <p class="card-text">Price:₹40,000</p>
+                        <div class="star4">☆☆☆☆☆</div>
+                        <a href="#" class="btn btn-primary">BUY NOW</a>
+                    </div>
                 </div>
-            </div>
-
-            <!--Mover-->
-            <div class="boxes">
-                <div class="hero_img">
-                    <img src="walking tractor.webp">
+                <!-- Product Card: Mild Steel -->
+                <div class="card">
+                    <img src="mild steel.webp" class="card-img-top" alt="mild steel">
+                    <div class="card-body">
+                        <h5 class="card-title">Mild Steel</h5>
+                        <p class="card-text">Price:₹40,000</p>
+                        <div class="star5">☆☆☆☆☆</div>
+                        <a href="#" class="btn btn-primary">BUY NOW</a>
+                    </div>
                 </div>
-                <div class="machine-name">
-                    <p>walking Tractor</p>
+                <!-- Product Card: Combo Equipment -->
+                <div class="card">
+                    <img src="equipments.jpeg" class="card-img-top" alt="mild steel">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo Equipments</h5>
+                        <p class="card-text">Price:₹50,000</p>
+                        <div class="star6">☆☆☆☆☆</div>
+                        <a href="#" class="btn btn-primary">BUY NOW</a>
+                    </div>
                 </div>
-                <div class="price">
-                    <p> ₹10,000</p>
-                    <div class="star3">☆</div>
-                    <div class="star3">☆</div>
-                    <div class="star3">☆</div>
-                    <div class="star3">☆</div>
-                    <div class="star3">☆</div>
-                </div>
-                <div class="Purchase">
-                    <button>Purchase</button>
-                </div>
-            </div>
-
-
-            <div class="boxes">
-                <div class="hero_img">
-                    <img src="cultivator.jpeg">
-                </div>
-                <div class="machine-name">
-                    <p>cultivator</p>
-                </div>
-                <div class="price">
-                    <p>₹50,000</p>
-                    <div class="star4">☆</div>
-                    <div class="star4">☆</div>
-                    <div class="star4">☆</div>
-                    <div class="star4">☆</div>
-                    <div class="star4">☆</div>
-                </div>
-                <div class="Purchase">
-                    <button>Purchase</button>
-                </div>
-            </div>
-
-
-            <!--Cement Mixer-->
-            <div class="boxes">
-                <div class="hero_img">
-                    <img src="manual fertilizer.webp">
-                </div>
-                <div class="machine-name">
-                    <p>Manual Fertilizer</p>
-                </div>
-                <div class="price">
-                    <p>₹25,200</p>
-                    <div class="star5">☆</div>
-                    <div class="star5">☆</div>
-                    <div class="star5">☆</div>
-                    <div class="star5">☆</div>
-                    <div class="star5">☆</div>
-                </div>
-                <div class="Purchase">
-                    <button>Purchase</button>
+                <!-- Product Card: Utility Tractor -->
+                <div class="card">
+                    <img src="tractor.jpg" class="card-img-top" alt="TRACTOR">
+                    <div class="card-body">
+                        <h5 class="card-title">TRACTOR</h5>
+                        <p class="card-text">Price:₹4,00,000</p>
+                        <div class="star6">☆☆☆☆☆</div>
+                        <a href="#" class="btn btn-primary">BUY NOW</a>
+                    </div>
                 </div>
             </div>
-
-
-            <!--Fork Lift-->
-            <div class="boxes">
-                <div class="hero_img">
-                    <img src="mild steel.webp">
-                </div>
-                <div class="machine-name">
-                    <p>Mild Steel</p>
-                </div>
-                <div class="price">
-                    <p>$1,63000</p>
-                    <div class="star6">☆</div>
-                    <div class="star6">☆</div>
-                    <div class="star6">☆</div>
-                    <div class="star6">☆</div>
-                    <div class="star6">☆</div>
-                </div>
-                <div class="Purchase">
-                    <button>Purchase</button>
-                </div>
-            </div>
-
-
-            <!--Earth Moving truck-->
-            <div class="boxes">
-                <div class="hero_img">
-                    <img src="equipments.jpeg">
-                </div>
-                <div class="machine-name">
-                    <p>Combo equipments</p>
-                </div>
-                <div class="price">
-                    <p>₹ 93000</p>
-                    <div class="star7">☆</div>
-                    <div class="star7">☆</div>
-                    <div class="star7">☆</div>
-                    <div class="star7">☆</div>
-                    <div class="star7">☆</div>
-                </div>
-                <div class="Purchase">
-                    <button>Purchase</button>
-                </div>
-            </div>
-
-            <!--Utility Tractor-->
-            <div class="boxes">
-                <div class="hero_img">
-                    <img src="tractor.jpg">
-                </div>
-                <div class="machine-name">
-                    <p>utility Tractor</p>
-                </div>
-                <div class="price">
-                    <p>₹ 2,59000</p>
-                    <div class="star8">☆</div>
-                    <div class="star8">☆</div>
-                    <div class="star8">☆</div>
-                    <div class="star8">☆</div>
-                    <div class="star8">☆</div>
-                </div>
-                <div class="Purchase">
-                    <button>Purchase</button>
-                </div>
-            </div>
-    </section>
-
-
-    <section class="footer">
-        <div class="left-side-footer">
-            <p>&copy;2024 All Rights Reserved.ShetiVidnyan.</p>
         </div>
-        <div class="right-side-footer">
-            <p>Web Design and Development by<a href="index.html">ShetiVidynan Team</p>
-        </div>
-    </section>
+               <footer class="footer">
+        <p>&copy; 2024 Sheti Vidnyan. All rights reserved.</p>
+        <p>Web Design and Development by <a href="index.html">Sheti Vidnyan Team</a></p>
+    </footer>
 
+                  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-</body>
-
-</html>
+              </body>
+              </html>
+              

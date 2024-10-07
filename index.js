@@ -6,7 +6,7 @@ function login(){
     let website_password="12345";
 
     if(username==website_username && password2==website_password){
-        window.location="Machinery.html"
+        window.location="home.html"
     }
 }
 function func(){
@@ -17,7 +17,7 @@ function func(){
     var website_password="12345";
 
     if(username=="KARTIK" && password2=="12345"){
-        window.location.href="Machinery.html";
+        window.location.href="home.html";
         alert("success")
     }
     else{
